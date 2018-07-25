@@ -19,6 +19,9 @@ module Etsy
   # [saturation] The saturation of the listing's primary image (HSV color).
   # [brightness] The value of the listing's primary image (HSV color).
   # [black_and_white?] True if the listing's primary image is in black & white.
+  # [sku] The listing sku
+  # [section_id] The id of the listing section
+  # [category_id] The id of the listing category
   #
   # Additionally, the following queries on this item are available:
   #
@@ -48,7 +51,9 @@ module Etsy
                :featured_rank, :occasion, :num_favorers, :user_id,
                :shipping_template_id, :who_made, :when_made,
                :original_creation_tsz, :style, :category_path,
-               :taxonomy_id, :taxonomy_attributes
+               :taxonomy_id, :taxonomy_attributes,
+               :sku, :shop_section_id, :category_id, :taxonomy_path,
+               :has_variations, :should_auto_renew
 
     association :image, :from => 'Images'
 

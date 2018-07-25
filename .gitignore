@@ -6,3 +6,5 @@ Gemfile.lock
 .rvmrc
 *.sw*
 *.orig
+.DS_Store
+.idea
